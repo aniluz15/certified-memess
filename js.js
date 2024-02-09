@@ -1,11 +1,14 @@
-let certificateoptions = {choice:"burger", choice: "green", choice: "skill", choice:"noggin"};
+// let certificateoptions = {choice:"burger", choice: "green", choice: "skill", choice:"noggin"};
 
 function submitButton(){
-    console.log("e")
+    switch(submitButton === "burger")
+    
 }
 // document.getElementById("Submit").addEventListener(onclick, submitButton);
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("Submit").addEventListener("click", submitButton);
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('name').addEventListener('change', function (eventData){
+        let nameOutput = document.getElementById('nameOutput')
+    })
 
 })
