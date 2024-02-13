@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     
     
+    
     // certificate.classList.add('number1');
     
     function changeCert(value){
@@ -67,16 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
         certificate.classList = ""; // clear classes on each function call
         switch(value){
             case 'A':
-                certificate.classList.add('number1');
+                certificate.classList.add('burgerimg');
             break;
             case 'B':
-                certificate.classList.add('number2');
+                certificate.classList.add('nogginimg');
             break;
             case 'C':
-                certificate.classList.add('number3');
+                certificate.classList.add('greenimg');
             break;
             case 'D':
-                certificate.classList.add('number4');
+                certificate.classList.add('skillimg');
             break;
         }
     }
@@ -98,11 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dateBox.innerText = theDate;
 });
 
-const showImageButton = document.getElementById("show-image-button");
-const myImage = document.getElementById("my-image"); 
-showImageButton.addEventListener("click", (){ 
-   myImage.style.display = "flex"; 
-});
+
 
 /* Additional things to be aware of */
 
