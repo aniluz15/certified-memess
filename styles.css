@@ -1,0 +1,14 @@
+.info {
+    display: none;
+}
+
+.visible {
+    position: absolute;
+    top: 15em;
+    left: 13em;
+    width: 10em;
+    font-family: cursive;
+    font-size: 25pt;
+    color: white;
+}
+

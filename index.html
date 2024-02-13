@@ -3,49 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM Demo</title>
     <link rel="stylesheet" href="styles.css">
     <script src="js.js"></script>
-    
 </head>
 <body>
+    <div class="pagewrapper">
 
-    <!-- Different Certificate Images -->
-    <section>
-        <section class="skillimg">
-            <img src="" alt="">
-        </section>
-        <section class="burgerimg">
-            <img src="" alt="">
-        </section>
-        <section class="greenimg">
-            <img src="" alt="">
-        </section>
-        <section class="nogginimg">
-            <img src="" alt="">
-        </section>
-    </section>]
+        <section class="left">
 
+            <div class="certificate " id="certificate">
+                <span id="nameOutput" class="visible"></span>
+                <span class="info" id="info">Test Info</span><br>
+                <span class="theDate" id="theDate">Is Now</span>
+            </div>
 
-    <!-- Option Drop Down for Certificates with type name box -->
-    <form id="form"> 
-        <select name="certificateoptions" id="certificate">
-            <option value="default">Choose Certificate</option>
-            <option value="skill">Skill Issues</option>
-            <option value="burger">Burger Acceptance</option>
-            <option value="green">Green Certificate</option>
-            <option value="noggin">0.5 Mastery</option>
-        </select>
-</form>
-<section>
-    <input type="text" name="signature" placeholder="Signature">
-    
-    <input type="text" name="name" placeholder="Name of Recipient">
-</section>
-    <!-- Submit Button -->
-    <section>
-        <button type="submit" id="Submit"> Submit </button>
-    </section>
-    
+        </section>
+
+        <section class="right">
+
+            <form class="form"></form>
+                <input type="text" name="name" id="name" placeholder="Name">
+        
+                <select name="type" id="type">
+                    <option value="A">Burger</option>
+                    <option value="B">0.5 Mastery</option>
+                    <img src="" alt="">
+                    <option value="C">Green Certificate</option>
+                    <img src="" alt="">
+                    <option value="D">Skill Issues</option>
+                    <img src="MacBook Pro 14_ - 4.png" alt="">
+                </select>
+                <input type="submit" value="Generate">
+                <input type="button" value="altPrint" onclick="window.print()">
+                
+            </form>
+        </section>
+        
+        <img src="MacBook Pro 14_ - 4.png" alt="">                    
+    </div>    
 </body>
 </html>
